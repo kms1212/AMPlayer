@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<locale>
+  <playerForm>
+    <formTitle>AMPlayer</formTitle>
+    <fileToolStripMenuItem>File</fileToolStripMenuItem>
+    <playToolStripMenuItem>Play</playToolStripMenuItem>
+    <videoToolStripMenuItem>Video</videoToolStripMenuItem>
+    <audioToolStripMenuItem>Audio</audioToolStripMenuItem>
+    <subtitlesToolStripMenuItem>Subtitles</subtitlesToolStripMenuItem>
+    <informationToolStripMenuItem>Information</informationToolStripMenuItem>
+    <viewToolStripMenuItem>View</viewToolStripMenuItem>
+    <optionsToolStripMenuItem>Options</optionsToolStripMenuItem>
+    <helpToolStripMenuItem>Help</helpToolStripMenuItem>
+    <openFileToolStripMenuItem>Open File</openFileToolStripMenuItem>
+    <videoFileDialogTitle>Choose a file.</videoFileDialogTitle>
+    <videoFileDialogFilter>Audio/Video (*.3gp *.aac *.ac3 *.ape *.asf *.avi *.bik *.bin *.dat *.divx *.dts *.dv *.dvr-ms *.flac *.flv *.hdmov *.iso *.m1v *.m2t *.m2ts *.m2v *.m3u *.m3u8 *.m4a *.m4b *.m4v *.mka *.mkv *.mov *.mp2 *.mp3 *.mp4 *.mpc *.mpeg *.mpg *.mpv *.mqv *.mts *.nsv *.oga *.ogg *.ogm *.ogv *.ogx *.opus *.part *.pls *.ra *.ram *.rec *.rm *.rmvb *.shn *.smk *.swf *.thd *.ts *.vcd *.vfw *.vob *.vp8 *.wav *.webm *.wma *.wmv *.wtv *.wv *.xspf)|*.3gp;*.aac;*.ac3;*.ape;*.asf;*.avi;*.bik;*.bin;*.dat;*.divx;*.dts;*.dv;*.dvr-ms;*.flac;*.flv;*.hdmov;*.iso;*.m1v;*.m2t;*.m2ts;*.m2v;*.m3u;*.m3u8;*.m4a;*.m4b;*.m4v;*.mka;*.mkv;*.mov;*.mp2;*.mp3;*.mp4;*.mpc;*.mpeg;*.mpg;*.mpv;*.mqv;*.mts;*.nsv;*.oga;*.ogg;*.ogm;*.ogv;*.ogx;*.opus;*.part;*.pls;*.ra;*.ram;*.rec;*.rm;*.rmvb;*.shn;*.smk;*.swf;*.thd;*.ts;*.vcd;*.vfw;*.vob;*.vp8;*.wav;*.webm;*.wma;*.wmv;*.wtv;*.wv;*.xspf|Other (*.*)|*.*;</videoFileDialogFilter>
+    <timestampNotAvailable>-:--:--</timestampNotAvailable>
+    <playerBackgroundText>Please select a file to playback.</playerBackgroundText>
+    <fileDownloadDialogText>Please wait while downloading and decompressing file...</fileDownloadDialogText>
+    <fileDownloadDialogTitle>Processing files</fileDownloadDialogTitle>
+  </playerForm>
+</locale>

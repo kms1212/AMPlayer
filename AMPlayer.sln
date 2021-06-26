@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMPlayer", "AMPlayer\AMPlayer.csproj", "{1839DB1B-1EB2-45DC-AB8C-B11F236DF79C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "player", "player\player.csproj", "{1839DB1B-1EB2-45DC-AB8C-B11F236DF79C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMPlayer", "AMPlayer\AMPlayer.csproj", "{D3D8E76B-EA5A-4DD3-BD2D-D255352BD771}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1839DB1B-1EB2-45DC-AB8C-B11F236DF79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1839DB1B-1EB2-45DC-AB8C-B11F236DF79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1839DB1B-1EB2-45DC-AB8C-B11F236DF79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D8E76B-EA5A-4DD3-BD2D-D255352BD771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D8E76B-EA5A-4DD3-BD2D-D255352BD771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D8E76B-EA5A-4DD3-BD2D-D255352BD771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D8E76B-EA5A-4DD3-BD2D-D255352BD771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

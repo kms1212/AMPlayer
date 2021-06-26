@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AMPlayer.resources" GeneratedClassName="player">
+  <Profiles />
+  <Settings>
+    <Setting Name="Locale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">international</Value>
+    </Setting>
+    <Setting Name="Theme" Type="System.String" Scope="User">
+      <Value Profile="(Default)">default</Value>
+    </Setting>
+    <Setting Name="MediaPlayer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\mplayer\mplayer.exe </Value>
+    </Setting>
+    <Setting Name="Arguments" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-osdlevel 0 -nofs -identify -slave -nomouseinput -sub-fuzziness 1 -vo direct3d, -ao dsound -wid $(OutputHandle) "$(Path)"</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

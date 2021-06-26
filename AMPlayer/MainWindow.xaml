@@ -1,0 +1,181 @@
+﻿<mah:MetroWindow x:Class="AMPlayer.MainWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+                 xmlns:local="clr-namespace:AMPlayer" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                 mc:Ignorable="d"
+                 Title="MainWindow" 
+                 Height="450" 
+                 Width="800" 
+                 TitleCharacterCasing="Normal"
+                 AllowsTransparency="False" Closing="MetroWindow_Closing">
+    <mah:MetroWindow.LeftWindowCommands>
+        <mah:WindowCommands>
+            <Menu Background="Transparent" FontSize="12" VerticalAlignment="Center" >
+                <MenuItem Header="_File" Background="Transparent">
+                    <MenuItem x:Name="openFileMenuItem" Header="_Open File" Click="openFileMenuItem_Click">
+
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem x:Name="closeMenuItem" Header="_Close" Click="closeMenuItem_Click">
+
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Play" Background="Transparent">
+
+                </MenuItem>
+                <MenuItem Header="_Video" Background="Transparent">
+
+                </MenuItem>
+                <MenuItem Header="_Audio" Background="Transparent">
+
+                </MenuItem>
+                <MenuItem Header="_Subtitles" Background="Transparent">
+
+                </MenuItem>
+                <MenuItem Header="_Information" Background="Transparent">
+
+                </MenuItem>
+                <MenuItem Header="_View" Background="Transparent">
+
+                </MenuItem>
+                <MenuItem Header="_Options" Background="Transparent">
+
+                </MenuItem>
+                <MenuItem Header="_Help" Background="Transparent">
+
+                </MenuItem>
+            </Menu>
+        </mah:WindowCommands>
+    </mah:MetroWindow.LeftWindowCommands>
+
+    <Grid x:Name="mainGrid" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <WindowsFormsHost Background="Black"
+                              HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <wf:Panel x:Name="mpParent" Dock="Fill">
+                    <wf:Panel.Controls>
+                        <wf:Panel x:Name="mediaPlayerOutput" Dock="Fill" MouseClick="MediaPlayerOutput_MouseClick"/>
+                    </wf:Panel.Controls>
+                </wf:Panel>
+            </WindowsFormsHost>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="36"/>
+                <RowDefinition Height="24"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="playPauseButton" Margin="4,4,0,0" Grid.Column="0" Click="PlayPauseButton_Click">
+                    <Button.Content>
+                        <iconPacks:PackIconFontAwesome Width="15"
+                                        Height="15"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Kind="PlaySolid" />
+                    </Button.Content>
+                </Button>
+                <Button x:Name="prevButton" Margin="4,4,0,0" Grid.Column="1">
+                    <Button.Content>
+                        <iconPacks:PackIconFontAwesome Width="15"
+                                        Height="15"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Kind="StepBackwardSolid" />
+                    </Button.Content>
+                </Button>
+                <Button x:Name="stopButton" Margin="4,4,0,0" Grid.Column="2" Click="StopButton_Click">
+                    <Button.Content>
+                        <iconPacks:PackIconFontAwesome Width="15"
+                                        Height="15"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Kind="StopSolid" />
+                    </Button.Content>
+                </Button>
+                <Button x:Name="nextButton" Margin="4,4,0,0" Grid.Column="3">
+                    <Button.Content>
+                        <iconPacks:PackIconFontAwesome Width="15"
+                                        Height="15"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Kind="StepForwardSolid" />
+                    </Button.Content>
+                </Button>
+                <Grid Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <Button x:Name="fullscreenButton" Margin="0,4,4,0" Click="FullscreenButton_Click">
+                            <iconPacks:PackIconMaterial Width="12"
+                                        Height="12"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Kind="Fullscreen" />
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="1">
+                        <Button x:Name="hideBarButton" Margin="0,4,4,0" Click="HideBarButton_Click">
+                            <iconPacks:PackIconMaterial Width="12"
+                                        Height="12"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Kind="MenuDownOutline" />
+                        </Button>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="5">
+                    <Slider x:Name="volumeSlider" Margin="4,4,4,4" SmallChange="1" LargeChange="10" Value="100" ValueChanged="VolumeSlider_ValueChanged" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Label x:Name="elapsedTimeLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                </Grid>
+                <Grid Grid.Column="1">
+                    <mah:MetroProgressBar x:Name="seekBar" 
+                                          MouseDown="SeekBar_MouseDown" 
+                                          MouseUp="SeekBar_MouseUp" 
+                                          MouseLeave="SeekBar_MouseLeave" 
+                                          MouseMove="SeekBar_MouseMove" Margin="0,5,0,5" />
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Label x:Name="lengthLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</mah:MetroWindow>

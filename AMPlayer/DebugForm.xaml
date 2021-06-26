@@ -1,0 +1,22 @@
+﻿<Window x:Class="AMPlayer.DebugForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AMPlayer"
+        mc:Ignorable="d"
+        Title="DebugForm" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <DockPanel>
+            <TextBox x:Name="frameInfo" 
+                     x:FieldModifier="public" 
+                     IsReadOnly="True"
+                     DockPanel.Dock="Bottom"/>
+            <TextBox x:Name="debugLog" 
+                 x:FieldModifier="public" 
+                 AcceptsReturn="True" 
+                 VerticalScrollBarVisibility="Visible" 
+                 TextWrapping="Wrap" IsReadOnly="True" TextChanged="debugLog_TextChanged" MaxLines="1024" />
+        </DockPanel>
+    </Grid>
+</Window>

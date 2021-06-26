@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AMPlayer" GeneratedClassName="settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Player" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.\Contents\bin\mplayer.exe</Value>
+    </Setting>
+    <Setting Name="PlayerArgs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-osdlevel 0 -nofs -identify -slave -nomouseinput -sub-fuzziness 1 -vo direct3d, -ao dsound -wid $(OutputHandle) "$(Path)"</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
