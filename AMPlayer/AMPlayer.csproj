@@ -8,7 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Contents\bin\mplayer.exe">
+    <None Remove="Contents\bin\mpv.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Contents\bin\mpv.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

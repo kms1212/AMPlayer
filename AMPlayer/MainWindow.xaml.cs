@@ -175,6 +175,11 @@ namespace AMPlayer
             {
                 try
                 {
+                    debugForm.Invoke(new Action(delegate
+                    {
+                        debugForm.debugLog.Text += "CORE > " + strMessage + "\n";
+                    }));
+
                     if (strMessage != "")
                     {
                         debugForm.Invoke(new Action(delegate
@@ -220,7 +225,7 @@ namespace AMPlayer
                             
                             debugForm.Invoke(new Action(delegate
                             {
-                                debugForm.debugLog.Text += "CORE > " + strMessage + "\n";
+                                //debugForm.debugLog.Text += "CORE > " + strMessage + "\n";
                             }));
 
                             if (strMessage.StartsWith("ID_") && strMessage.Contains('='))
